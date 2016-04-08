@@ -1,0 +1,15 @@
+{
+  "name": "Shop",
+  "description": "Angularjs 练习项目,实现一个简单订餐网站",
+  "version": "0.0.1",
+  "homepage": "http://wwww.4emperors.com",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "amazeui": "^2.6.1"
+  }
+}
