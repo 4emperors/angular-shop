@@ -15,15 +15,11 @@ angular.module('myApp.view1', ['ngRoute'])
             
         });
     }])
-
-    .controller('LoginCtrl', [function () {
+    .controller('LoginCtrl', ['$scope',function ($scope) {
         $scope.user={
-            username:"KeithFu",password:"123456"
-        }
-        $scope.doLogin=function (user) {
-            alert(user.username);
-        }
 
+            username:"Keith",password:"123456"
+        }
     }])
 
 ;

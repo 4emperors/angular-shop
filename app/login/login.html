@@ -1,4 +1,4 @@
-<div class="am-g" ng-controller="">
+<div class="am-g" ng-controller="LoginCtrl">
     <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
         <h3>每天的精彩,从登录开始</h3>
         <hr>
@@ -10,10 +10,10 @@
         <br>
         <form method="post" class="am-form">
             <label for="email">邮箱:</label>
-            <input type="email" name="" id="email" value="{{user.username}}">
+            <input type="email" name="" id="email" value="{{ user.username}}">
             <br>
             <label for="password">密码:</label>
-            <input type="password" name="" id="password" value="{{user.username}}">
+            <input type="password" name="" id="password" value="{{user.password}}">
             <br>
             <label for="remember-me">
                 <input id="remember-me" type="checkbox">
