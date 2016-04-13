@@ -1,15 +1,10 @@
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute'])
+define(function (require) {
 
-.config(['$routeProvider', function($routeProvider) {
+  var app = require('../app');
 
-  $routeProvider.when('/contact', {
-    templateUrl: 'contact/contact.html',
-    controller: 'ContactCtrl'
-  });
-}])
+  app.controller('ContactCtrl', [function() {
 
-.controller('ContactCtrl', [function() {
-
-}]);
+  }]);
+});

@@ -1,14 +1,20 @@
 'use strict';
+define(function (require, exports, module) {
+    var angular = require('angular');
+    var asyncLoader = require('angular-async-loader');
 
-// Declare app level module which depends on views, and components
-angular.module('myApp', [
-    'ngRoute',
-    'myApp.view1',
-    'myApp.view2',
-    'myApp.version'
-]).config(['$routeProvider', function ($routeProvider) {
+    require('angular-route');
 
-    $routeProvider.otherwise({redirectTo: '/login'})
-    ;
+    var app = angular.module('app', ['ngRoute']);
 
-}]);
+    // initialze app module for async loader
+    asyncLoader.configure(app);
+
+    app.config(['$routeProvider', function ($routeProvider) {
+
+        $routeProvider.otherwise({redirectTo: '/login'});
+
+    }]);
+
+    module.exports = app;
+});
